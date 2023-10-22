@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", async (req, res) => {
   return res.json({ message: "Hello, World ✌️" });
 });
-// app.use(errorHandler);
+
 app.use("/api", mainRoutes);
 
 const start = async () => {
