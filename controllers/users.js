@@ -45,7 +45,7 @@ exports.register = async (req, res, next) => {
     if (error instanceof BadRequestError) {
       next(error);
     } else {
-      next(new InternalServerError());
+      next(new InternalServerError("Erreur interne du serveur"));
     }
   }
 };
@@ -98,7 +98,7 @@ exports.login = async (req, res, next) => {
       next(error);
     } else {
       console.error(error.message);
-      next(new InternalServerError());
+      next(new InternalServerError("Erreur interne du serveur"));
     }
   }
 };

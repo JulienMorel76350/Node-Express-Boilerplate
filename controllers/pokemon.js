@@ -14,7 +14,7 @@ exports.getAll = async (next, res) => {
       next(error);
     } else {
       console.error(error.message);
-      next(new InternalServerError());
+      next(new InternalServerError("Erreur interne du serveur"));
     }
   }
 };
@@ -32,7 +32,7 @@ exports.create = async (req, res, next) => {
       next(error);
     } else {
       console.error(error.message);
-      next(new InternalServerError());
+      next(new InternalServerError("Erreur interne du serveur"));
     }
   }
 };
@@ -64,7 +64,7 @@ exports.delete = async (req, res, next) => {
       next(error);
     } else {
       console.error(error.message);
-      next(new InternalServerError());
+      next(new InternalServerError("Erreur interne du serveur"));
     }
   }
 };
