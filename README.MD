@@ -1,4 +1,4 @@
-# Elysia with Bun Boiler plate ⭐️
+# Node with Express ⭐️
 This projects is a boiler plate to help people start with Node js, Express and mongoDB
 
 ## An easy project to start 
